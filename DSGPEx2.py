@@ -29,9 +29,10 @@ matA = matB = [True, False]
 
 add = lambda X, Y: (X + Y, "+")
 sub = lambda X, Y: (X - Y, "-")
+mul = lambda X, Y: (X * Y, "*")
+div = lambda X, Y: (None if Y == 0 else X, "/")
 
-
-operations = [add, sub]
+operations = [add, sub, mul, div]
 
 for op in operations:
     for A in matA:
