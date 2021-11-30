@@ -92,7 +92,6 @@ print(df_map['titanic'].sample(5))
 
 df_map['titanic']['QCutBins'] = pd.qcut(df_map['titanic']['age'], q=10)  # Divide into 10 equal sized bins
 
-'''
 fig, ax = plt.subplots(1, 2)  # Create subplot
 str_compare = ['EqualSpacedBins', 'QCutBins'] #Columns to iterate through
 for i in range(0, len(str_compare)):
@@ -105,7 +104,6 @@ for i in range(0, len(str_compare)):
     ax[i].set_title("Distribution using %s" % str_compare[i])
 fig.tight_layout()
 plt.show()
-'''
 
 '''Aggregation'''
 
